@@ -1,0 +1,107 @@
+.non-primary-layout-container {
+
+    md-sidenav {
+        overflow: hidden;
+        z-index: 200;
+    }
+
+    md-backdrop.md-sidenav-backdrop.md-opaque {
+        background: transparent;
+    }
+
+    .non-primary-header-toolbar,
+    .primary-vertical-navigation md-toolbar {
+        height: $primary-layout-toolbar-height;
+
+        .toolbar-separator {
+            height: $primary-layout-toolbar-height;
+            background: $primary-layout-toolbar-separator-bg-color;
+            width: 1px;
+        }
+
+        .md-icon-button {
+            height: $primary-layout-toolbar-height;
+            width: $primary-layout-toolbar-height;
+        }
+
+        .icon {
+            height: $primary-layout-toolbar-height / 2.5;
+            width: $primary-layout-toolbar-height / 2.5;
+        }
+
+        .vertical-navigation-lock-icon {
+
+            .icon {
+                transition: transform .3s linear;
+            }
+
+            .vertical-navigation-locked {
+                transform: rotate(-180deg);
+            }
+        }
+
+    }
+
+    .non-primary-header-toolbar {
+        md-menu-bar {
+            padding: 0;
+
+            md-menu.md-open > button {
+                background-color: transparent;
+            }
+        }
+    }
+
+    .primary-vertical-navigation,
+    .primary-vertical-navigation.md-locked-open-add-active,
+    .primary-vertical-navigation.md-closed.md-locked-open-add-active,
+    .primary-vertical-navigation.md-locked-open {
+        width: 270px;
+        min-width: 270px;
+        max-width: 270px;
+        background: $primary-default;
+
+        md-content {
+            height: 90vh;
+            background: $primary-default;
+        }
+    }
+
+    .primary-horizontal-navigation {
+        height: 43px;
+        max-height: 43px;
+        min-height: 43px;
+        border-top: 3px solid;
+        background: $primary-default;
+        border-color: $accent-default;
+    }
+
+
+    .non-primary-quick-panel  {
+
+        md-tabs-canvas,
+        md-pagination-wrapper,
+        .md-tab {
+            height: 64px;
+        }
+
+        md-tabs {
+            md-ink-bar {
+                background: $primary-default;
+                color: $primary-default;
+            }
+
+            .md-ripple-container {
+                color: $primary-default;
+            }
+        }
+
+        .md-tab {
+            text-transform: none;
+            padding: 20px 12px;
+
+            background: $accent-default;
+            color: $font-color-light;
+        }
+    }
+}

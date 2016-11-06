@@ -1,0 +1,17 @@
+{
+  "name": "@norn/non-shared-system-administration",
+  "version": "0.1.0",
+  "description": "Module that handles common services of Oraganization, Static Data, Authorization, Authentication n other system features",
+  "main": "src/system-administration.module.ts",
+  "typings": "src/app/app.model.ts",
+  "scripts" : {
+      "install-typings": "typings install"
+  },
+  "peerDependencies": {
+    "angular": "1.5.8",
+    "@norn/non-framework": "0.1.0"
+  },
+  "devDependencies": {
+    "typings": "0.7.12"
+  }
+}
