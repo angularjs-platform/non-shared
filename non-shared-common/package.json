@@ -1,0 +1,16 @@
+{
+  "name": "@norn/non-shared-common",
+  "version": "0.1.0",
+  "description": "Main module that defines the abstract layout and other common shared parts",
+  "main": "src/common.module.ts",
+  "scripts" : {
+      "install-typings": "typings install"
+  },
+  "peerDependencies": {
+    "angular": "1.5.8",
+    "@norn/non-framework": "0.1.0"
+  },
+  "devDependencies": {
+    "typings": "0.7.12"
+  }
+}

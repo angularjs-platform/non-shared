@@ -1,0 +1,17 @@
+{
+  "name": "@norn/non-shared-authentication-management",
+  "version": "0.1.0",
+  "description": "Module that handles common services of Authentication, OTP etc.",
+  "main": "src/authentication-management.module.ts",
+  "typings": "src/app/app.model.ts",
+  "scripts" : {
+      "install-typings": "typings install"
+  },
+  "peerDependencies": {
+    "angular": "1.5.8",
+    "@norn/non-framework": "0.1.0"
+  },
+  "devDependencies": {
+    "typings": "0.7.12"
+  }
+}
