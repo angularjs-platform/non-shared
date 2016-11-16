@@ -5,6 +5,6 @@ export interface IConfigurationService {
 }
 
 export type Configuration = {
-    primaryMenuList: {}[],
+    primaryMenuList: {},
     viewConfig: string[]
 }
