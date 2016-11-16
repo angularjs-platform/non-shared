@@ -8,7 +8,7 @@ export class ConfigurationService implements IConfigurationService {
         private $http: ng.IHttpService) {
         'ngInject';
         this.config = {
-            primaryMenuList: [],
+            primaryMenuList: {},
             viewConfig: []
         };
     }
