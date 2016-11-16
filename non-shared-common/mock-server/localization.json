@@ -81,5 +81,8 @@
     "LEGAL_NUMBER": "Legal Number",
     "LEGAL_TYPE": "Legal Type",
     "USER_ROLES": "Roles for User",
-    "CORRESPONDENCE_LANGUAGE": "Correspondence Language"
+    "CORRESPONDENCE_LANGUAGE": "Correspondence Language",
+    "LISTOFCURRENCIES": "List Of Currencies",
+    "ISOCODE": "ISO Code",
+    "CURRENCY_NAME": "Name"
 }
