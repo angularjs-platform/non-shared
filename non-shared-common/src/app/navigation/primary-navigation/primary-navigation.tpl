@@ -21,13 +21,14 @@
 
     <div id="content-container" layout="column" flex>
         <!-- Header Toolbar-->
-        <div layout="column" class="md-whiteframe-4dp">
+        <md-content layout="column" class="md-whiteframe-2dp">
             <md-toolbar class="md-primary non-primary-header-toolbar">
                 <div layout="row" layout-align="space-between center" flex>
                     <div layout="row" layout-align="start center">
                         <div layout="row" layout-align="start center" ng-show="vm.primaryLayoutType !== 'vertical' || !vm.verticalNavigationLocked">
                             <md-button ng-show="vm.primaryLayoutType === 'vertical'" class="md-icon-button"
-                            ng-mouseenter="vm.toggleSideNav('primary-vertical-navigation')" aria-label="Toggle Primary Menu Button">
+                                ng-mouseenter="vm.toggleSideNav('primary-vertical-navigation')" ng-click="vm.toggleSideNav('primary-vertical-navigation')"
+                                aria-label="Toggle Primary Menu Button">
                                 <md-icon md-svg-icon="menu" class="icon"></md-icon>
                             </md-button>
                             <div class="toolbar-separator" ng-show="vm.primaryLayoutType === 'vertical'"></div>
@@ -96,17 +97,15 @@
             <md-toolbar ng-show="vm.primaryLayoutType !== 'vertical'" class="md-menu-toolbar primary-horizontal-navigation" flex>
                 <non-horizontal-navigation-bar menu-list="vm.menuList"></non-horizontal-navigation-bar>
             </md-toolbar>
-        </div>
-
-
+        </md-content>
 
         <!-- Secondary Page Content-->
-        <div ui-view="secondary-main" layout="column" flex class="md-whiteframe-6dp" layout-margin></div>
+        <div ui-view="secondary-main" class="non-secondary-main" layout="column" flex></div>
 
         <!-- Fab Speed Dial -->
         <md-fab-speed-dial md-direction="up" class="md-fling md-fab-bottom-right">
             <md-fab-trigger>
-                <md-button class="md-fab md-accent" aria-label="Page Action Button">
+                <md-button class="md-fab md-primary" aria-label="Page Action Button">
                     <md-icon md-svg-icon="silverware" class="icon"></md-icon>
                 </md-button>
             </md-fab-trigger>
@@ -163,10 +162,8 @@
                                     <br/>
                                     <md-radio-group layout="column" ng-model="vm.secondaryLayoutType"
                                         ng-change="vm.updateSecondaryLayoutStyle()">
-                                        <md-radio-button value="vertical"><span translate>VERTICAL_NAVIGATION</span></md-radio-button>
-                                        <md-radio-button value="horizontal"><span translate>HORIZONTAL_NAVIGATION</span></md-radio-button>
-                                        <md-radio-button value="contentWithToolbar"><span translate>CONTENT_WITH_TOOLBAR</span></md-radio-button>
-                                        <md-radio-button value="contentOnly"><span translate>CONTENT_ONLY</span></md-radio-button>
+                                        <md-radio-button value="left"><span translate>LEFT_NAVIGATION</span></md-radio-button>
+                                        <md-radio-button value="right"><span translate>RIGHT_NAVIGATION</span></md-radio-button>
                                     </md-radio-group>
                                 </div>
                             </div>
