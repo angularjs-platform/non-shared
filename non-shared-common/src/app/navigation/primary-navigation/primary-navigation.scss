@@ -24,11 +24,6 @@
             width: $primary-layout-toolbar-height;
         }
 
-        .icon {
-            height: $primary-layout-toolbar-height / 2.5;
-            width: $primary-layout-toolbar-height / 2.5;
-        }
-
         .vertical-navigation-lock-icon {
 
             .icon {
@@ -56,9 +51,9 @@
     .primary-vertical-navigation.md-locked-open-add-active,
     .primary-vertical-navigation.md-closed.md-locked-open-add-active,
     .primary-vertical-navigation.md-locked-open {
-        width: 270px;
-        min-width: 270px;
-        max-width: 270px;
+        width: 250px;
+        min-width: 250px;
+        max-width: 250px;
         background: $primary-default;
 
         md-content {
@@ -103,5 +98,9 @@
             background: $accent-default;
             color: $font-color-light;
         }
+    }
+
+    .non-secondary-main {
+        background: lighten($primary-50, 5%);
     }
 }
