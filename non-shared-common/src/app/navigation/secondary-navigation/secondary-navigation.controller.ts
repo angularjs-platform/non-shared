@@ -1,26 +1,18 @@
 import {IMenuService, ILayoutService} from '@norn/non-framework';
+import {INavigationService} from '../navigation';
 
 export class SecondaryNavigationController {
 
     public menuList: any = {};
-    public secondaryNavigationType: string;
 
-    constructor(private $rootScope: ng.IRootScopeService,
-                private MenuService: IMenuService,
-                private LayoutService: ILayoutService,
-                private $mdSidenav: ng.material.ISidenavService) {
+    constructor(private MenuService: IMenuService,
+                private $mdSidenav: ng.material.ISidenavService,
+                public LayoutService: ILayoutService,
+                public NavigationService: INavigationService) {
         'ngInject';
-
-        this.menuList = this.MenuService.getSecondaryMenuList();
-
-        this.secondaryNavigationType = this.LayoutService.getSecondaryLayoutType();
-
-        this.$rootScope.$on('$stateChangeStart', (event: any, toState: any, toParams: any, fromState: any, fromParams: any): any => {
-            this.menuList = this.MenuService.getSecondaryMenuList();
-        });
     }
 
-    public toggleSideNav = (id: string) : any => {
-        this.$mdSidenav(id).toggle();
-    };
+    public toggleSecondarySideNav = (): void => {
+        this.$mdSidenav('secondary-nav').open();
+    }
 }

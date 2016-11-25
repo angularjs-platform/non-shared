@@ -1,2 +1,41 @@
+.non-secondary-layout-container {
 
+    background: lighten($primary-50, 5%);
+    margin-bottom: 0;
 
+    md-toolbar {
+        background: $primary-default;
+        border-bottom: 5px solid $accent-default;
+        height: 64px;
+    }
+
+    .vertical-menu {
+        width: 200px;
+        min-width: 200px;
+        max-width: 200px;
+        background: $accent-default;
+
+        non-vertical-navigation-bar {
+            margin: 0;
+            padding: 0;
+
+            .vertical-navigation-bar {
+                background: $accent-default;
+            }
+        }
+    }
+}
+
+.sidenav-secondary-navigation {
+    top: 144px;
+    width: 240px;
+    min-width: 240px;
+    left: calc(100% - 16px);
+    background: $accent-default;
+
+    non-vertical-navigation-bar {
+        .vertical-navigation-bar {
+            background: $accent-default;
+        }
+    }
+}

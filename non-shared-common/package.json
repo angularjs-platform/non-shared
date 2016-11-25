@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Main module that defines the abstract layout and other common shared parts",
   "main": "src/common.module.ts",
+  "typings": "src/app/app.model.ts",
   "scripts" : {
       "install-typings": "typings install"
   },
