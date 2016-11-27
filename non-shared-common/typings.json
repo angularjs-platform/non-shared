@@ -14,6 +14,7 @@
     "jquery": "registry:dt/jquery#1.10.0+20160929162922",
     "lodash": "registry:dt/lodash#4.14.0+20161110215204",
     "node": "registry:dt/node#6.0.0+20161110151007",
-    "ui-grid": "registry:dt/ui-grid#0.0.0+20160816133502"
+    "ui-grid": "registry:dt/ui-grid#0.0.0+20160816133502",
+    "angular-breadcrumb": "registry:dt/angular-breadcrumb#0.0.0+20160830081712"
   }
 }
