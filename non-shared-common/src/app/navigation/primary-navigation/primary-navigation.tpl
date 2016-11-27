@@ -99,6 +99,16 @@
             </md-toolbar>
         </md-content>
 
+        <!-- Breadcrumb -->
+        <div layout="row" layout-align="space-between center" class="md-whiteframe-2dp secondary-navigation-toolbar">
+            <div ncy-breadcrumb></div>
+            <div layout-align="end center" ng-show="vm.MenuService.getSecondaryMenuList()" hide-gt-sm>
+                <md-button class="md-icon-button" ng-click="vm.toggleSecondarySideNav()" aria-label="Secondary Menu Toogle Button">
+                    <md-icon md-svg-icon="menu" class="icon"></md-icon>
+                </md-button>
+            </div>
+        </div>
+
         <!-- Secondary Page Content-->
         <div ui-view="secondary-main" class="non-secondary-main" layout="column" flex></div>
 

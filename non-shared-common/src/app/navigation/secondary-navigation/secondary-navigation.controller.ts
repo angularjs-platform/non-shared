@@ -4,15 +4,15 @@ import {INavigationService} from '../navigation';
 export class SecondaryNavigationController {
 
     public menuList: any = {};
+    public LayoutService: ILayoutService;
+    public NavigationService: INavigationService;
 
-    constructor(private MenuService: IMenuService,
-                private $mdSidenav: ng.material.ISidenavService,
-                public LayoutService: ILayoutService,
-                public NavigationService: INavigationService) {
+    constructor(LayoutService: ILayoutService,
+                NavigationService: INavigationService,
+                private MenuService: IMenuService) {
         'ngInject';
-    }
 
-    public toggleSecondarySideNav = (): void => {
-        this.$mdSidenav('secondary-nav').open();
+        this.LayoutService = LayoutService;
+        this.NavigationService = NavigationService;
     }
 }

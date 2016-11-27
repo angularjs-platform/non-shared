@@ -3,10 +3,12 @@ import {IEntityManagementService} from './entity-management';
 export abstract class EntityManagementService implements IEntityManagementService {
 
     public baseUrl: string;
+    public $http: ng.IHttpService;
 
-    constructor(
-        private $http: ng.IHttpService) {
+    constructor($http: ng.IHttpService) {
         'ngInject';
+
+        this.$http = $http;
     }
 
     public initiate = (): ng.IPromise<any> => {
@@ -35,9 +37,9 @@ export abstract class EntityManagementService implements IEntityManagementServic
 
     public list = (): ng.IPromise<any> => {
         return this.$http.get(this.baseUrl + '/list').then(this.getCompleteHandler);
-  };
+    };
 
-    private getCompleteHandler = (response: any): any => {
+    public getCompleteHandler = (response: any): any => {
         return response.data;
     };
 }

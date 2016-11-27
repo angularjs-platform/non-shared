@@ -1,10 +1,10 @@
-import {IMenuService} from '@norn/non-framework';
+import { IMenuService, IStateProvider } from '@norn/non-framework';
 import {IConfigurationService, Configuration} from './config/config';
 
 export class UiRouterConfig {
 
     constructor (
-        private $stateProvider: ng.ui.IStateProvider
+        private $stateProvider: IStateProvider
     ) {
         'ngInject';
 
@@ -25,6 +25,9 @@ export class UiRouterConfig {
                         template: require('./navigation/secondary-navigation/secondary-navigation.tpl'),
                         controller: 'SecondaryNavigationController as vm'
                     }
+                },
+                ncyBreadcrumb: {
+                    skip: true
                 }
         });
     }
@@ -36,178 +39,208 @@ export class UiRouterConfig {
             MenuService.setPrimaryMenuList({
                 'main': [
                     {
-                        'id': 'BankGroup',
-                        'title': 'Bank Group',
-                        'reference': 'BGA-SystemAdministration-Ref',
+                        'id': 'Home',
+                        'title': 'Home',
+                        'reference': null,
+                        'url': '/home'
+                    },
+                    {
+                        'id': 'bankgroup-system-administration',
+                        'title': 'System Administration (BGA)',
+                        'reference': 'bankgroup-system-administration-ref',
                         'url': null
                     },
                     {
-                        'id': 'Bank',
-                        'title': 'Bank',
-                        'reference': 'BA-SystemAdministration-Ref',
+                        'id': 'bank-system-administration',
+                        'title': 'System Administration (BA)',
+                        'reference': 'bank-system-administration-ref',
                         'url': null
                     },
                     {
-                        'id': 'Customer',
-                        'title': 'Customer',
-                        'reference': 'CA-SystemAdministration-Ref',
+                        'id': 'customer-system-administration',
+                        'title': 'System Administration (CA)',
+                        'reference': 'customer-system-administration-ref',
                         'url': null
                     }
                 ],
-                    'BGA-SystemAdministration-Ref': [
-                        {
-                            'id': 'BGA-SystemAdministration-User',
-                            'title': 'User Profile',
-                            'reference': 'BGA-SystemAdministration-User-Ref',
-                            'url': null
-                        },
-                        {
-                            'id': 'BGA-SystemAdministration-Bank',
-                            'title': 'Bank Maintenance',
-                            'reference': 'BGA-SystemAdministration-Bank-Ref',
-                            'url': null
-                        },
-                        {
-                            'id': 'BGA-SystemAdministration-Customer',
-                            'title': 'Customer Maintenance',
-                            'reference': 'BGA-SystemAdministration-Customer-Ref',
-                            'url': null
-                        }
-                    ],
-                        'BGA-SystemAdministration-User-Ref': [
-                            {
-                                'id': 'BGA-SystemAdministration-User-Create',
-                                'title': 'Create User',
-                                'reference': null,
-                                'url': '/bga/bankgroup/user/initiate'
-                            },
-                            {
-                                'id': 'BGA-SystemAdministration-User-List',
-                                'title': 'List User',
-                                'reference': null,
-                                'url': '/bga/bankgroup/user/list'
-                            }
-                        ],
-                        'BGA-SystemAdministration-Bank-Ref': [
-                            {
-                                'id': 'BGA-SystemAdministration-Bank-Profile',
-                                'title': 'Profile',
-                                'reference': 'BGA-SystemAdministration-Bank-Profile-Ref',
-                                'url': null
-                            },
-                            {
-                                'id': 'BGA-SystemAdministration-Bank-User',
-                                'title': 'User Profile',
-                                'reference': null,
-                                'url': '/bga/bank/user/selectbank'
-                            }
-                        ],
-                            'BGA-SystemAdministration-Bank-Profile-Ref': [
-                                {
-                                    'id': 'BGA-SystemAdministration-Bank-Profile-Create',
-                                    'title': 'Create Bank',
-                                    'reference': null,
-                                    'url': '/bga/bank/initiate'
-                                },
-                                {
-                                    'id': 'BGA-SystemAdministration-Bank-Profile-List',
-                                    'title': 'List Banks',
-                                    'reference': null,
-                                    'url': '/bga/bank/list'
-                                }
-                            ],
-                        'BGA-SystemAdministration-Customer-Ref': [
-                            {
-                                'id': 'BGA-SystemAdministration-Customer-Profile',
-                                'title': 'Profile',
-                                'reference': null,
-                                'url': '/bga/customer/selectbank'
-                            },
-                            {
-                                'id': 'BGA-SystemAdministration-Customer-User',
-                                'title': 'User Profile',
-                                'reference': null,
-                                'url': '/bga/customer/user/selectbank'
-                            }
-                        ],
-                'BA-SystemAdministration-Ref': [
+                'bankgroup-system-administration-ref': [
                     {
-                        'id': 'BA-SystemAdministration-User-Ref',
-                        'title': 'User Profile',
-                        'reference': 'BA-SystemAdministration-User-Ref',
-                        'url': null
+                        'id': 'bga-maintenance',
+                        'title': 'BankGroup Maintenance',
+                        'reference': null,
+                        'url': '/bga/bankgroup'
                     },
                     {
-                        'id': 'BA-SystemAdministration-Customer-Ref',
+                        'id': 'bga-bank-maintenance',
+                        'title': 'Bank Maintenance',
+                        'reference': null,
+                        'url': '/bga/bank'
+                    },
+                    {
+                        'id': 'bga-customer-maintenance',
                         'title': 'Customer Maintenance',
-                        'reference': 'BA-SystemAdministration-Customer-Ref',
-                        'url': null
+                        'reference': null,
+                        'url': '/bga/customer'
                     }
                 ],
-                    'BA-SystemAdministration-User-Ref': [
-                        {
-                            'id': 'BA-SystemAdministration-User-Create',
-                            'title': 'Create User',
-                            'reference': null,
-                            'url': '/ba/bank/user/initiate'
-                        },
-                        {
-                            'id': 'BA-SystemAdministration-User-List',
-                            'title': 'List User',
-                            'reference': null,
-                            'url': '/ba/bank/user/list'
-                        }
-                    ],
-                    'BA-SystemAdministration-Customer-Ref': [
-                        {
-                            'id': 'BA-SystemAdministration-Customer-Profile',
-                            'title': 'Profile',
-                            'reference': 'BA-SystemAdministration-Customer-Profile-Ref',
-                            'url': null
-                        },
-                        {
-                            'id': 'BA-SystemAdministration-Customer-User',
-                            'title': 'User Profile',
-                            'reference': null,
-                            'url': '/ba/customer/user/selectcustomer'
-                        }
-                    ],
-                        'BA-SystemAdministration-Customer-Profile-Ref': [
-                            {
-                                'id': 'BA-SystemAdministration-Customer-Profile-Create',
-                                'title': 'Create',
-                                'reference': null,
-                                'url': '/ba/customer/initiate'
-                            },
-                            {
-                                'id': 'BA-SystemAdministration-Customer-Profile-List',
-                                'title': 'List',
-                                'reference': null,
-                                'url': '/ba/customer/list'
-                            }
-                        ],
-                'CA-SystemAdministration-Ref': [
+                'bank-system-administration-ref': [
                     {
-                        'id': 'CA-SystemAdministration-User-Ref',
+                        'id': 'ba-maintenance',
+                        'title': 'Bank Maintenance',
+                        'reference': null,
+                        'url': '/ba/bank'
+                    },
+                    {
+                        'id': 'ba-customer-maintenance',
+                        'title': 'Customer Maintenance',
+                        'reference': null,
+                        'url': '/ba/customer'
+                    }
+                ],
+                'customer-system-administration-ref': [
+                    {
+                        'id': 'ca-maintenance',
+                        'title': 'Customer Maintenance',
+                        'reference': null,
+                        'url': '/ca/customer'
+                    }
+                ],
+                'bga-bankgroup-maintenance-ref': [
+                    {
+                        'id': 'bga-bankgroup-maintenance-user-profile',
                         'title': 'User Profile',
-                        'reference': 'CA-SystemAdministration-User-Ref',
+                        'reference': 'bga-bankgroup-maintenance-user-profile-ref',
                         'url': null
                     }
                 ],
-                    'CA-SystemAdministration-User-Ref': [
-                        {
-                            'id': 'CA-SystemAdministration-User-Create',
-                            'title': 'Create User',
-                            'reference': null,
-                            'url': '/ca/customer/user/initiate'
-                        },
-                        {
-                            'id': 'CA-SystemAdministration-User-List',
-                            'title': 'List User',
-                            'reference': null,
-                            'url': '/ca/customer/user/list'
-                        }
-                    ]
+                'bga-bankgroup-maintenance-user-profile-ref': [
+                    {
+                        'id': 'bga-bankgroup-maintenance-user-profile-initiate',
+                        'title': 'Create User',
+                        'reference': null,
+                        'url': '/bga/bankgroup/user/initiate'
+                    },
+                    {
+                        'id': 'bga-bankgroup-maintenance-user-profile-list',
+                        'title': 'List Users',
+                        'reference': null,
+                        'url': '/bga/bankgroup/user/list'
+                    }
+                ],
+                'bga-bank-maintenance-ref': [
+                    {
+                        'id': 'bga-bank-maintenance-bank-profile',
+                        'title': 'Bank Profile',
+                        'reference': 'bga-bank-maintenance-bank-profile-ref',
+                        'url': null
+                    },
+                    {
+                        'id': 'bga-bank-maintenance-bank-user-profile',
+                        'title': 'User Profile',
+                        'reference': null,
+                        'url': '/bga/bank/user/selectbank'
+                    }
+                ],
+                'bga-bank-maintenance-bank-profile-ref': [
+                    {
+                        'id': 'bga-bank-maintenance-bank-profile-initiate',
+                        'title': 'Create Bank',
+                        'reference': null,
+                        'url': '/bga/bank/initiate'
+                    },
+                    {
+                        'id': 'bga-bank-maintenance-bank-profile-list',
+                        'title': 'List Banks',
+                        'reference': null,
+                        'url': '/bga/bank/list'
+                    }
+                ],
+                'bga-customer-maintenance-ref': [
+                    {
+                        'id': 'bga-customer-maintenance-customer-profile',
+                        'title': 'Customer Profile',
+                        'reference': null,
+                        'url': '/bga/customer/selectbank'
+                    },
+                    {
+                        'id': 'bga-customer-maintenance-user-profile',
+                        'title': 'User Profile',
+                        'reference': null,
+                        'url': '/bga/customer/user/selectbank'
+                    }
+                ],
+                'ba-bank-maintenance-ref': [
+                    {
+                        'id': 'ba-bank-maintenance-user-profile',
+                        'title': 'User Profile',
+                        'reference': 'ba-bank-maintenance-user-profile-ref',
+                        'url': null
+                    }
+                ],
+                'ba-bank-maintenance-user-profile-ref': [
+                    {
+                        'id': 'ba-bank-maintenance-user-profile-initiate',
+                        'title': 'Create User',
+                        'reference': null,
+                        'url': '/ba/bank/user/initiate'
+                    },
+                    {
+                        'id': 'ba-bank-maintenance-user-profile-list',
+                        'title': 'List Users',
+                        'reference': null,
+                        'url': '/ba/bank/user/list'
+                    }
+                ],
+                'ba-customer-maintenance-ref': [
+                    {
+                        'id': 'ba-customer-maintenance-customer-profile',
+                        'title': 'Customer Profile',
+                        'reference': 'ba-customer-maintenance-customer-profile-ref',
+                        'url': null
+                    },
+                    {
+                        'id': 'ba-customer-maintenance-user-profile',
+                        'title': 'User Profile',
+                        'reference': null,
+                        'url': '/ba/customer/user/selectcustomer'
+                    }
+                ],
+                'ba-customer-maintenance-customer-profile-ref': [
+                    {
+                        'id': 'ba-customer-maintenance-customer-profile-initiate',
+                        'title': 'Create Customer',
+                        'reference': null,
+                        'url': '/ba/customer/initiate'
+                    },
+                    {
+                        'id': 'ba-customer-maintenance-customer-profile-list',
+                        'title': 'List Customers',
+                        'reference': null,
+                        'url': '/ba/customer/list'
+                    }
+                ],
+                'ca-customer-maintenance-ref': [
+                    {
+                        'id': 'ca-customer-maintenance-user-profile',
+                        'title': 'User Profile',
+                        'reference': 'ca-customer-maintenance-user-profile-ref',
+                        'url': null
+                    }
+                ],
+                'ca-customer-maintenance-user-profile-ref': [
+                    {
+                        'id': 'ca-customer-maintenance-user-profile-initiate',
+                        'title': 'Create User',
+                        'reference': null,
+                        'url': '/ca/customer/user/initiate'
+                    },
+                    {
+                        'id': 'ca-customer-maintenance-user-profile-list',
+                        'title': 'List Users',
+                        'reference': null,
+                        'url': '/ca/customer/user/list'
+                    }
+                ]
             });
         });
     };

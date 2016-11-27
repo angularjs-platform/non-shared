@@ -38,7 +38,6 @@
     "THEME": "Theme",
     "DEFAULT": "Default",
     "CUSTOM": "Custom",
-    "BANK_MAINTENANCE": "Bank Maintenance",
     "BANK_ABBV_NAME": "Bank Abbrivated Name",
     "BANK_NAME": "Bank Name",
     "ADDRESS_1": "Address 1",
@@ -85,5 +84,19 @@
     "CORRESPONDENCE_LANGUAGE": "Correspondence Language",
     "LISTOFCURRENCIES": "List Of Currencies",
     "ISOCODE": "ISO Code",
-    "CURRENCY_NAME": "Name"
+    "CURRENCY_NAME": "Name",
+    "USER_PROFILE_MAINTENANCE": "User Profile Maintenance",
+
+    "BA_SYSTEM_ADMINISTRATION": "Bank System Administration",
+    "BG_SYSTEM_ADMINISTRATION": "Bankgroup System Administration",
+    "CA_SYSTEM_ADMINISTRATION": "Customer System Administration",
+    "BANKGROUP_MAINTENANCE": "Bankgroup Maintenance",
+    "CUSTOMER_MAINTENANCE": "Customer Maintenance",
+    "BANK_MAINTENANCE": "Bank Maintenance",
+    "USER_PROFILE": "User Profile",
+    "LIST_USERS": "List of Users",
+    "CREATE_USER": "Create User",
+    "VIEW_USER": "View User",
+    "UPDATE_USER": "Update User"
 }
+

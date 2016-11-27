@@ -1,8 +1,12 @@
+$secondary-navigation-toolbar-bg-color: #fff;
+
 .non-primary-layout-container {
+
+    background: lighten($primary-50, 5%);
 
     md-sidenav {
         overflow: hidden;
-        z-index: 200;
+        z-index: 100;
     }
 
     md-backdrop.md-sidenav-backdrop.md-opaque {
@@ -102,5 +106,15 @@
 
     .non-secondary-main {
         background: lighten($primary-50, 5%);
+    }
+
+    .secondary-navigation-toolbar {
+        background: $secondary-navigation-toolbar-bg-color;
+        margin: 12px 8px 4px;
+
+        .md-button.md-icon-button {
+            height: 36px;
+            padding: 6px;
+        }
     }
 }
