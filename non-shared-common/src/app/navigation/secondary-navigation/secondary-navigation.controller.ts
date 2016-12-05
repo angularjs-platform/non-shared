@@ -1,18 +1,16 @@
 import {IMenuService, ILayoutService} from '@norn/non-framework';
-import {INavigationService} from '../navigation';
 
 export class SecondaryNavigationController {
 
     public menuList: any = {};
     public LayoutService: ILayoutService;
-    public NavigationService: INavigationService;
+    public MenuService: IMenuService;
 
     constructor(LayoutService: ILayoutService,
-                NavigationService: INavigationService,
-                private MenuService: IMenuService) {
+                MenuService: IMenuService) {
         'ngInject';
 
         this.LayoutService = LayoutService;
-        this.NavigationService = NavigationService;
+        this.MenuService = MenuService;
     }
 }
