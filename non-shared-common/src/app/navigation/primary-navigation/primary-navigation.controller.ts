@@ -8,17 +8,19 @@ export class PrimaryNavigationController {
     public secondaryLayoutType: string;
     public theme: string;
     public verticalNavigationLocked: boolean;
+    public MenuService: IMenuService;
 
-    constructor (private LayoutService: ILayoutService,
+    constructor (MenuService: IMenuService,
+                 private LayoutService: ILayoutService,
                  private $mdSidenav: ng.material.ISidenavService,
                  private $translate: ng.translate.ITranslateService,
-                 private MenuService: IMenuService,
                  private $anchorScroll: ng.IAnchorScrollService,
                  private $location: ng.ILocationService,
                  private $window: ng.IWindowService,
                  private ThemeService: IThemeService) {
         'ngInject';
 
+        this.MenuService = MenuService;
         this.primaryLayoutType = this.LayoutService.getPrimaryLayoutType();
         this.secondaryLayoutType = this.LayoutService.getSecondaryLayoutType();
 
@@ -47,6 +49,10 @@ export class PrimaryNavigationController {
         if (!this.verticalNavigationLocked) {
             this.$mdSidenav('primary-vertical-navigation').close();
         }
+    }
+
+    public toggleSecondarySideNav = (): void => {
+        this.$mdSidenav('secondary-nav').open();
     }
 
     public changeLanguage = (lang: string): void => {
