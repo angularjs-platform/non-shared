@@ -35,8 +35,8 @@ export abstract class EntityManagementService implements IEntityManagementServic
         return this.$http.post(this.baseUrl + '/delete', {id: orgId}).then(this.getCompleteHandler);
     };
 
-    public list = (): ng.IPromise<any> => {
-        return this.$http.get(this.baseUrl + '/list').then(this.getCompleteHandler);
+    public getListUrl = (): string => {
+        return this.baseUrl + '/list';
     };
 
     public getCompleteHandler = (response: any): any => {
