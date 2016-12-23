@@ -14,5 +14,5 @@ export interface IEntityManagementService {
 
     delete(id: Number): ng.IPromise<any>;
 
-    list(): ng.IPromise<any>;
+    getListUrl(): string;
 }
