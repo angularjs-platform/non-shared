@@ -5,12 +5,9 @@ import {UiRouterConfig} from './app.routes';
 
 // Sub-modules
 import navigation from './navigation/navigation.module';
-import config from './config/config.module';
 
-angular.module(moduleName, [navigation, config])
+angular.module(moduleName, [navigation])
     .config(UiRouterConfig);
-
-export * from './app.model';
 
 export default moduleName;
 
