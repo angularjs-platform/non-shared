@@ -179,7 +179,7 @@ function config(req, res, next) {
 				]
         },
         viewConfig: [
-            "sampleconfig"
+            "ADDRESS_HAS_DOM"
         ]
     });
 }

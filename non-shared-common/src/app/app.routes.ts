@@ -1,5 +1,4 @@
-import { IMenuService, IStateProvider } from '@norn/non-framework';
-import {IConfigurationService, Configuration} from './config/config';
+import { IMenuService, IStateProvider, IConfigurationService, Configuration } from '@norn/non-framework';
 
 export class UiRouterConfig {
 
