@@ -69,6 +69,7 @@
     "FORM_CONFIRMATION_DIALOG_TITLE_MESSAGE": "Please Confirm!",
     "SAVE_FORM_CONFIRMATION_DIALOG_SUBJECT_MESSAGE": "You are going to save the transaction",
     "SUBMIT_FORM_CONFIRMATION_DIALOG_SUBJECT_MESSAGE": "You are going to submit the transaction",
+    "DELETE_LIST_ITEM_CONFIRMATION_DIALOG_SUBJECT_MESSAGE": "You are going to delete the item",
     "OK": "Ok",
     "CANCEL": "Cancel",
     "REGEX_ALPHA_MESSAGE": "Value can only have Alphabets!",
