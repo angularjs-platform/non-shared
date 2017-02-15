@@ -1,3 +1,5 @@
+import * as angular from 'angular';
+
 const moduleName: string = 'non.shared.authentication-management';
 
 import app from './app/app.module';
