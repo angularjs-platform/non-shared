@@ -1,3 +1,5 @@
+import * as angular from 'angular';
+
 const moduleName: string = 'non.shared.common.app.secondary-navigation';
 
 // Controller
