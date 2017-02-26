@@ -10,6 +10,19 @@
     "@norn/non-framework": "0.1.0"
   },
   "devDependencies": {
-    "@types/angular": "1.6.5"
+    "@types/angular": "1.6.5",
+    "@types/angular-animate": "1.5.6",
+    "@types/angular-cookies": "1.4.3",
+    "@types/angular-loading-bar": "0.0.30",
+    "@types/angular-local-storage": "0.1.33",
+    "@types/angular-material": "1.1.45",
+    "@types/angular-sanitize": "1.3.4",
+    "@types/angular-translate": "2.4.34",
+    "@types/angular-ui-router": "1.1.36",
+    "@types/jquery": "2.0.40",
+    "@types/lodash": "4.14.52",
+    "@types/node": "7.0.5",
+    "@types/ui-grid": "0.0.35",
+    "@types/angular-breadcrumb": "0.4.21"
   }
 }
