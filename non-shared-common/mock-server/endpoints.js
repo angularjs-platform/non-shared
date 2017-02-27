@@ -188,6 +188,15 @@ function getLocalization(req, res, next) {
     res.json(localizationValues);
 }
 
+
+function upload(req, res, next) {
+    var file = req.files.file;
+    res.json({
+        name: file.name,
+        attachmentId :  Math.floor(Math.random() * 100)
+    });
+}
+
 var apiEndpoints = {
     mainUrl: '',
     routes: [{
@@ -199,6 +208,12 @@ var apiEndpoints = {
         method: 'GET',
         url: '/config',
         callback: config
+    },
+    {
+        method: 'POST',
+        url: '/upload',
+        callback: upload,
+        isupload: true
     }]
 };
 
