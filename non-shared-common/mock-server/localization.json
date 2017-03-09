@@ -90,6 +90,9 @@
     "ISOCODE": "ISO Code",
     "CURRENCY_NAME": "Name",
     "USER_PROFILE_MAINTENANCE": "User Profile Maintenance",
+    "TITLE": "Title",
+    "ERROR_UPLOAD": "There was an error while uploading the file. Please try again!",
+    "GRID_ITEMS_COUNT": "({{count}} of {{max}}) - Max {{max}} items",
 
     "BA_SYSTEM_ADMINISTRATION": "Bank System Administration",
     "BG_SYSTEM_ADMINISTRATION": "Bankgroup System Administration",
