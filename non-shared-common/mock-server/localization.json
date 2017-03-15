@@ -1,4 +1,29 @@
 {
+    "BREADCRUMB": {
+        "BG_SYSTEM_ADMINISTRATION": "BG System Administration",
+        "BA_SYSTEM_ADMINISTRATION": "Bank System Administration",
+        "CA_SYSTEM_ADMINISTRATION": "Customer System Administration",
+        "AUTHORIZATION_MAINTENANCE": "Authorization Maintenance",
+        "BANK_MAINTENANCE": "Bank Maintenance",
+        "ROLE_MAINTENANCE": "Role Maintenance",
+        "USER_MAINTENANCE": "User Maintenance",
+        "CUSTOMER_MAINTENANCE": "Customer Maintenance",
+        "ACCOUNTS_MAINTENANCE": "Accounts Maintenance",
+        "BENEFICIARY_MAINTENANCE": "Beneficiary Maintenance",
+        "BRANCH_MAINTENANCE": "Branch Maintenance",
+        "INPREP_LIST": "Inpreparation",
+        "MASTER_LIST": "Existing",
+        "PENDING_LIST": "Pending",
+        "CREATE": "Create",
+        "HISTORY_EDIT": "Edit",
+        "HISTORY_VIEW": "View",
+        "HISTORY_CHECK": "Check",
+        "EDIT": "Edit",
+        "VIEW": "View",
+        "USER_PROFILE_MAINTENANCE": "User Maintenance",
+        "USER_ADVANCED_PROFILE_MAINTENANCE": "Advanced",
+        "CUSTOMER_ADVANCED_PROFILE_MAINTENANCE": "Advanced"
+    },
     "BUTTON": {
         "OK": "Ok",
         "CANCEL": "Cancel",
@@ -8,7 +33,12 @@
         "VIEW": "View",
         "DELETE": "Delete",
         "SEARCH": "Search",
-        "RESET": "Reset"
+        "RESET": "Reset",
+        "DRAFT": "Draft",
+        "APPROVE": "Approve",
+        "REJECT": "Reject",
+        "RETURN": "Return",
+        "DISCARD": "Discard"
     },
     "COMMON": {
         "ACTIONS": "Actions"
@@ -40,6 +70,21 @@
     "GRID": {
         "ITEMS_COUNT": "({{count}} of {{max}}) - Max {{max}} items"
     },
+    "HEADER": {
+        "AUTHORIZATION_MAINTENANCE": "Authorization Maintenance",
+        "BANK_MAINTENANCE": "Bank Maintenance",
+        "ROLE_MAINTENANCE": "Role Maintenance",
+        "USER_MAINTENANCE": "User Maintenance",
+        "CUSTOMER_MAINTENANCE": "Customer Maintenance",
+        "ACCOUNTS_MAINTENANCE": "Accounts Maintenance",
+        "BENEFICIARY_MAINTENANCE": "Beneficiary Maintenance",
+        "BRANCH_MAINTENANCE": "Branch Maintenance",
+        "USER_PROFILE_MAINTENANCE": "User Profile Maintenance",
+        "USER_ADVANCED_PROFILE_MAINTENANCE": "User Advanced Profile Maintenance",
+        "CUSTOMER_PROFILE_MAINTENANCE": "Customer Profile Maintenance",
+        "CUSTOMER_ADVANCED_PROFILE_MAINTENANCE": "Customer Advanced Profile Maintenance",
+        "BANK_PROFILE_MAINTENANCE": "Bank Profile Maintenance"
+    },
     "LIST": {
         "SEARCH_OPTIONS": "Search Options"
     },
@@ -48,6 +93,29 @@
         "ORGANIZATION_ID": "Organization ID",
         "PASSWORD": "Password",
         "USER_ID": "User ID"
+    },
+    "MENU": {
+        "HOME": "Home",
+        "BGA_SYSTEM_ADMINISTRATION": "System Administration (BGA)",
+        "BA_SYSTEM_ADMINISTRATION": "System Administration (BA)",
+        "CA_SYSTEM_ADMINISTRATION": "System Administration (CA)",
+        "BANKGROUP_MAINTENANCE": "BankGroup Maintenance",
+        "BANK_MAINTENANCE": "Bank Maintenance",
+        "CUSTOMER_MAINTENANCE": "Customer Maintenance",
+        "ROLE_MAINTENANCE": "Role Maintenance",
+        "AUTHORIZATION_MATRIX_MAINTENANCE": "Authorization Maintenance",
+        "USER_MAINTENANCE": "User Maintenance",
+        "BRACH_MAINTENANCE": "Branch Maintenance",
+        "ACCOUNTS_MAINTENANCE": "Accounts Maintenance",
+        "BENEFICIARY_MAINTENANCE": "Beneficiary Maintenance",
+        "PROFILE": "Profile",
+        "ADVANCED_PROFILE": "Advanced Profile",
+        "USER_PROFILE": "User",
+        "ADVANCED_USER_PROFILE": "Advanced User",
+        "CREATE": "Create",
+        "INPREPARATION": "Inpreparation",
+        "PENDING": "Pending",
+        "EXISTING": "Existing"
     },
     "QUICK_PANEL": {
         "TAB_HEADER_NOTIFICATIONS": "Notifications",
