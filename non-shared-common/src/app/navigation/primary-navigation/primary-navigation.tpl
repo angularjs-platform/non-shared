@@ -112,7 +112,7 @@
         <!-- Secondary Page Content-->
         <div ui-view="secondary-main" class="non-secondary-main" layout="column" flex></div>
 
-        <!-- Fab Speed Dial -->
+        <!-- Fab Speed Dial
         <md-fab-speed-dial md-direction="up" class="md-fling md-fab-bottom-right">
             <md-fab-trigger>
                 <md-button class="md-fab md-primary" aria-label="Page Action Button">
@@ -127,7 +127,7 @@
                     <md-icon md-svg-icon="chevron-double-up" class="icon"></md-icon>
                 </md-button>
             </md-fab-actions>
-        </md-fab-speed-dial>
+        </md-fab-speed-dial> -->
     </div>
 
     <!-- Quick Panel -->

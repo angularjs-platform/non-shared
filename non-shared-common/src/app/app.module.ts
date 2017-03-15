@@ -7,8 +7,9 @@ import {UiRouterConfig} from './app.routes';
 
 // Sub-modules
 import navigation from './navigation/navigation.module';
+import workflow from './workflow-management/workflow-management.module';
 
-angular.module(moduleName, [navigation])
+angular.module(moduleName, [navigation, workflow])
     .config(UiRouterConfig);
 
 export default moduleName;
