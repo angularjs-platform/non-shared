@@ -25,6 +25,7 @@
         "CUSTOMER_ADVANCED_PROFILE_MAINTENANCE": "Advanced"
     },
     "BUTTON": {
+        "ADD": "Add",
         "OK": "Ok",
         "CANCEL": "Cancel",
         "SAVE": "Save",
