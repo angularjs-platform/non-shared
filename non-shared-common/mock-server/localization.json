@@ -71,6 +71,9 @@
     "GRID": {
         "ITEMS_COUNT": "({{count}} of {{max}}) - Max {{max}} items"
     },
+    "ATTACHMENTS": {
+        "FILENAME": "File Name"
+    },
     "HEADER": {
         "AUTHORIZATION_MAINTENANCE": "Authorization Maintenance",
         "BANK_MAINTENANCE": "Bank Maintenance",
