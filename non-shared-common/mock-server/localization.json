@@ -25,54 +25,13 @@
         "CUSTOMER_ADVANCED_PROFILE_MAINTENANCE": "Advanced"
     },
     "BUTTON": {
-        "ADD": "Add",
-        "OK": "Ok",
-        "CANCEL": "Cancel",
-        "SAVE": "Save",
         "SUBMIT": "Submit",
-        "EDIT": "Edit",
         "VIEW": "View",
-        "DELETE": "Delete",
-        "SEARCH": "Search",
-        "RESET": "Reset",
         "DRAFT": "Draft",
         "APPROVE": "Approve",
         "REJECT": "Reject",
         "RETURN": "Return",
         "DISCARD": "Discard"
-    },
-    "COMMON": {
-        "ACTIONS": "Actions"
-    },
-    "DIALOG": {
-        "TITLE": "Title"
-    },
-    "FORM": {
-        "FORM_CONFIRMATION_DIALOG_TITLE_MESSAGE": "Please Confirm!",
-        "SAVE_FORM_CONFIRMATION_DIALOG_SUBJECT_MESSAGE": "You are going to save the transaction",
-        "SUBMIT_FORM_CONFIRMATION_DIALOG_SUBJECT_MESSAGE": "You are going to submit the transaction",
-        "DELETE_LIST_ITEM_CONFIRMATION_DIALOG_SUBJECT_MESSAGE": "You are going to delete the item",
-        "CORRECT_FORM_INPUT_ERRORS": "Please correct the Form!",
-        "SUBMISSION_ERROR": "Error while submitting",
-        "ERROR_UPLOAD": "There was an error while uploading the file. Please try again!",
-        "FIELD_MAX_LENGTH_EXCEEDED": "Maximum Length Exceeded!",
-        "FIELD_REQUIRED": "Value Is Required!",
-        "FIELD_MAX_VALUE_EXCEEDED": "Maximum Value Exceeded!",
-        "FIELD_NOT_EMAIL": "Invalid Email!",
-        "FIELD_NOT_URL": "Invalid URL!",
-        "FIELD_NOT_DATE": "The entered value is not a date!",
-        "FIELD_MIN_DATE_NEEDED": "Date is too early!",
-        "FIELD_MAX_DATE_EXCEEDED": "Date is too late!",
-        "FIELD_MIN_LENGTH_NEEDED": "Minimum Length Not Reached!",
-        "FIELD_MIN_VALUE_NEEDED": "Minimum Value Not reached!",
-        "REGEX_ALPHA_MESSAGE": "Value can only have Alphabets!",
-        "ERROR_MESSAGE_UNIQUE": "{{label}} you have entered already exists!"
-    },
-    "GRID": {
-        "ITEMS_COUNT": "({{count}} of {{max}}) - Max {{max}} items"
-    },
-    "ATTACHMENTS": {
-        "FILENAME": "File Name"
     },
     "HEADER": {
         "AUTHORIZATION_MAINTENANCE": "Authorization Maintenance",
@@ -88,15 +47,6 @@
         "CUSTOMER_PROFILE_MAINTENANCE": "Customer Profile Maintenance",
         "CUSTOMER_ADVANCED_PROFILE_MAINTENANCE": "Customer Advanced Profile Maintenance",
         "BANK_PROFILE_MAINTENANCE": "Bank Profile Maintenance"
-    },
-    "LIST": {
-        "SEARCH_OPTIONS": "Search Options"
-    },
-    "LOGIN" : {
-        "LOGIN": "Login",
-        "ORGANIZATION_ID": "Organization ID",
-        "PASSWORD": "Password",
-        "USER_ID": "User ID"
     },
     "MENU": {
         "HOME": "Home",

@@ -1,4 +1,3 @@
-var localizationValues = require('./localization.json');
 var menu = require('./menu.json');
 
 function config(req, res, next) {
@@ -9,11 +8,6 @@ function config(req, res, next) {
         ]
     });
 }
-
-function getLocalization(req, res, next) {
-    res.json(localizationValues);
-}
-
 
 function upload(req, res, next) {
     var file = req.files.file;
@@ -26,11 +20,6 @@ function upload(req, res, next) {
 var apiEndpoints = {
     mainUrl: '',
     routes: [{
-        method: 'GET',
-        url: '/locale/all',
-        callback: getLocalization
-    },
-    {
         method: 'GET',
         url: '/config',
         callback: config
