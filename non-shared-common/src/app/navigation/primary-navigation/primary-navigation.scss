@@ -78,12 +78,6 @@ $secondary-navigation-toolbar-bg-color: #fff;
 
     .non-primary-quick-panel  {
 
-        md-tabs-canvas,
-        md-pagination-wrapper,
-        .md-tab {
-            height: 64px;
-        }
-
         md-tabs {
             md-ink-bar {
                 background: $primary-default;
@@ -97,10 +91,14 @@ $secondary-navigation-toolbar-bg-color: #fff;
 
         .md-tab {
             text-transform: none;
-            padding: 20px 12px;
-
+            padding-right: 12px;
+            padding-left: 12px;
             background: $accent-default;
             color: $font-color-light;
+        }
+
+        md-tab-content {
+            padding: 10px;
         }
     }
 

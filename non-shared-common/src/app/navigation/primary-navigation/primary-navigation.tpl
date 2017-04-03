@@ -132,29 +132,29 @@
     </div>
 
     <!-- Quick Panel -->
-    <md-sidenav class="md-sidenav-right md-whiteframe-6dp non-primary-quick-panel" md-component-id="quick-panel" non-lean-scroll>
-        <md-tabs md-no-pagination md-swipe-content md-dynamic-height md-stretch-tabs="always" md-border-bottom>
+    <md-sidenav layout="column" class="md-sidenav-right md-whiteframe-6dp non-primary-quick-panel" md-component-id="quick-panel" non-lean-scroll>
+        <md-tabs md-no-pagination md-swipe-content md-stretch-tabs="always" md-border-bottom flex>
             <md-tab>
                 <md-tab-label><span translate>QUICK_PANEL.TAB_HEADER_NOTIFICATIONS</span></md-tab-label>
                 <md-tab-body>
-                    <md-content class="notfications-tab scrollable" layout-margin non-lean-scroll>
-                        <div layout-padding>Here notifications will appear</div>
+                    <md-content class="notfications-tab">
+                        <div>Here notifications will appear</div>
                     </md-content>
                 </md-tab-body>
             </md-tab>
             <md-tab>
                 <md-tab-label><span translate>QUICK_PANEL.TAB_HEADER_BOOKMARKS</span></md-tab-label>
                 <md-tab-body>
-                    <md-content class="bookmarks-tab scrollable" layout-margin non-lean-scroll>
-                        <div layout-padding>Here bookmarks will appear</div>
+                    <md-content class="bookmarks-tab">
+                        <div>Here bookmarks will appear</div>
                     </md-content>
                 </md-tab-body>
             </md-tab>
             <md-tab hide-xs hide-sm>
                 <md-tab-label><span translate>QUICK_PANEL.TAB_HEADER_SETTINGS</span></md-tab-label>
                 <md-tab-body>
-                    <md-content class="settings-tab scrollable" non-lean-scroll>
-                        <div hide show-gt-sm layout-padding>
+                    <md-content class="settings-tab">
+                        <div hide show-gt-sm>
                             <div layout="column" class="md-caption">
                                 <div>
                                     <div class="md-body-2" translate>QUICK_PANEL.PRIMARY_LAYOUT_STYLE</div>
