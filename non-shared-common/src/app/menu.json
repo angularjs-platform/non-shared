@@ -1,0 +1,1049 @@
+{
+    "main": [
+        {
+            "id": "Home",
+            "title": "MENU.HOME",
+            "reference": null,
+            "url": "/home"
+        },
+        {
+            "id": "bankgroup-system-administration",
+            "title": "MENU.BGA_SYSTEM_ADMINISTRATION",
+            "reference": "bankgroup-system-administration-ref",
+            "url": null
+        },
+        {
+            "id": "bank-system-administration",
+            "title": "MENU.BA_SYSTEM_ADMINISTRATION",
+            "reference": "bank-system-administration-ref",
+            "url": null
+        },
+        {
+            "id": "customer-system-administration",
+            "title": "MENU.CA_SYSTEM_ADMINISTRATION",
+            "reference": "customer-system-administration-ref",
+            "url": null
+        }
+    ],
+    "bankgroup-system-administration-ref": [
+        {
+            "id": "bga-bankgroup-maintenance-role-maintenance",
+            "title": "MENU.ROLE_MAINTENANCE",
+            "reference": null,
+            "url": "/org/bga/bankgroup/role"
+        },
+        {
+            "id": "bga-bankgroup-maintenance-auth-matrix-maintenance",
+            "title": "MENU.AUTHORIZATION_MATRIX_MAINTENANCE",
+            "reference": null,
+            "url": "/org/bga/bankgroup/authorization"
+        },
+        {
+            "id": "bga-bankgroup-maintenance-user-maintenance",
+            "title": "MENU.USER_MAINTENANCE",
+            "reference": null,
+            "url": "/org/bga/bankgroup/user"
+        },
+        {
+            "id": "bga-bank-maintenance",
+            "title": "MENU.BANK_MAINTENANCE",
+            "reference": null,
+            "url": "/org/bga/bank"
+        },
+        {
+            "id": "bga-customer-maintenance",
+            "title": "MENU.CUSTOMER_MAINTENANCE",
+            "reference": null,
+            "url": "/org/bga/customer"
+        }
+    ],
+        "bga-bankgroup-maintenance-role-maintenance-ref": [
+            {
+                "id": "bga-bankgroup-maintenance-role-maintenance-create",
+                "title": "MENU.CREATE",
+                "reference": null,
+                "url": "/org/bga/bankgroup/role/create"
+            },
+            {
+                "id": "bga-bankgroup-maintenance-role-maintenance-inpreparation",
+                "title": "MENU.INPREPARATION",
+                "reference": null,
+                "url": "/org/bga/bankgroup/role/inprep/list"
+            },
+            {
+                "id": "bga-bankgroup-maintenance-role-maintenance-pending",
+                "title": "MENU.PENDING",
+                "reference": null,
+                "url": "/org/bga/bankgroup/role/pending/list"
+            },
+            {
+                "id": "bga-bankgroup-maintenance-role-maintenance-existing",
+                "title": "MENU.EXISTING",
+                "reference": null,
+                "url": "/org/bga/bankgroup/role/master/list"
+            }
+        ],
+        "bga-bankgroup-maintenance-auth-matrix-maintenance-ref": [
+            {
+                "id": "bga-bankgroup-maintenance-auth-matrix-create",
+                "title": "MENU.CREATE",
+                "reference": null,
+                "url": "/org/bga/bankgroup/authorization/create"
+            },
+            {
+                "id": "bga-bankgroup-maintenance-auth-matrix-inpreparation",
+                "title": "MENU.INPREPARATION",
+                "reference": null,
+                "url": "/org/bga/bankgroup/authorization/inprep/list"
+            },
+            {
+                "id": "bga-bankgroup-maintenance-auth-matrix-pending",
+                "title": "MENU.PENDING",
+                "reference": null,
+                "url": "/org/bga/bankgroup/authorization/pending/list"
+            },
+            {
+                "id": "bga-bankgroup-maintenance-auth-matrix-existing",
+                "title": "MENU.EXISTING",
+                "reference": null,
+                "url": "/org/bga/bankgroup/authorization/master/list"
+            }
+        ],
+        "bga-bankgroup-maintenance-user-maintenance-ref": [
+            {
+                "id": "bga-bankgroup-maintenance-user-maintenance-profile-create",
+                "title": "MENU.CREATE",
+                "reference": null,
+                "url": "/org/bga/bankgroup/user/create"
+            },
+            {
+                "id": "bga-bankgroup-maintenance-user-maintenance-profile-inpreparation",
+                "title": "MENU.INPREPARATION",
+                "reference": null,
+                "url": "/org/bga/bankgroup/user/inprep/list"
+            },
+            {
+                "id": "bga-bankgroup-maintenance-user-maintenance-profile-pending",
+                "title": "MENU.PENDING",
+                "reference": null,
+                "url": "/org/bga/bankgroup/user/pending/list"
+            },
+            {
+                "id": "bga-bankgroup-maintenance-user-maintenance-profile-existing",
+                "title": "MENU.EXISTING",
+                "reference": null,
+                "url": "/org/bga/bankgroup/user/master/list"
+            }
+        ],
+        "bga-bank-maintenance-ref": [
+            {
+                "id": "bga-bank-maintenance-profile",
+                "title": "MENU.PROFILE",
+                "reference": "bga-bank-maintenance-profile-ref",
+                "url": null
+            },
+            {
+                "id": "bga-bank-maintenance-auth-matrix-maintenance",
+                "title": "MENU.AUTHORIZATION_MATRIX_MAINTENANCE",
+                "reference": "bga-bank-maintenance-auth-matrix-maintenance-ref",
+                "url": null
+            },
+            {
+                "id": "bga-bank-maintenance-user-maintenance-profile",
+                "title": "MENU.USER_PROFILE",
+                "reference": "bga-bank-maintenance-user-maintenance-profile-ref",
+                "url": null
+            }
+        ],
+            "bga-bank-maintenance-profile-ref": [
+                {
+                    "id": "bga-bank-maintenance-profile-create",
+                    "title": "MENU.CREATE",
+                    "reference": null,
+                    "url": "/org/bga/bank/create"
+                },
+                {
+                    "id": "bga-bank-maintenance-profile-inpreparation",
+                    "title": "MENU.INPREPARATION",
+                    "reference": null,
+                    "url": "/org/bga/bank/inprep/list"
+                },
+                {
+                    "id": "bga-bank-maintenance-profile-pending",
+                    "title": "MENU.PENDING",
+                    "reference": null,
+                    "url": "/org/bga/bank/pending/list"
+                },
+                {
+                    "id": "bga-bank-maintenance-profile-existing",
+                    "title": "MENU.EXISTING",
+                    "reference": null,
+                    "url": "/org/bga/bank/master/list"
+                }
+            ],
+            "bga-bank-maintenance-auth-matrix-maintenance-ref": [
+                {
+                    "id": "bga-bank-maintenance-auth-matrix-create",
+                    "title": "MENU.CREATE",
+                    "reference": null,
+                    "url": "/org/bga/bank/authorization/create"
+                },
+                {
+                    "id": "bga-bank-maintenance-auth-matrix-inpreparation",
+                    "title": "MENU.INPREPARATION",
+                    "reference": null,
+                    "url": "/org/bga/bank/authorization/inprep/list"
+                },
+                {
+                    "id": "bga-bank-maintenance-auth-matrix-pending",
+                    "title": "MENU.PENDING",
+                    "reference": null,
+                    "url": "/org/bga/bank/authorization/pending/list"
+                },
+                {
+                    "id": "bga-bank-maintenance-auth-matrix-existing",
+                    "title": "MENU.EXISTING",
+                    "reference": null,
+                    "url": "/org/bga/bank/authorization/master/list"
+                }
+            ],
+            "bga-bank-maintenance-user-maintenance-profile-ref": [
+                {
+                    "id": "bga-bank-maintenance-user-maintenance-profile-create",
+                    "title": "MENU.CREATE",
+                    "reference": null,
+                    "url": "/org/bga/bank/user/create"
+                },
+                {
+                    "id": "bga-bank-maintenance-user-maintenance-profile-inpreparation",
+                    "title": "MENU.INPREPARATION",
+                    "reference": null,
+                    "url": "/org/bga/bank/user/inprep/list"
+                },
+                {
+                    "id": "bga-bank-maintenance-user-maintenance-profile-pending",
+                    "title": "MENU.PENDING",
+                    "reference": null,
+                    "url": "/org/bga/bank/user/pending/list"
+                },
+                {
+                    "id": "bga-bank-maintenance-user-maintenance-profile-existing",
+                    "title": "MENU.EXISTING",
+                    "reference": null,
+                    "url": "/org/bga/bank/user/master/list"
+                }
+            ],
+        "bga-customer-maintenance-ref": [
+            {
+                "id": "bga-customer-maintenance-profile",
+                "title": "MENU.PROFILE",
+                "reference": "bga-customer-maintenance-profile-ref",
+                "url": null
+            },
+            {
+                "id": "bga-customer-maintenance-advanced-profile",
+                "title": "MENU.ADVANCED_PROFILE",
+                "reference": "bga-customer-maintenance-advanced-profile-ref",
+                "url": null
+            },
+            {
+                "id": "bga-customer-maintenance-auth-matrix-maintenance",
+                "title": "MENU.AUTHORIZATION_MATRIX_MAINTENANCE",
+                "reference": "bga-customer-maintenance-auth-matrix-maintenance-ref",
+                "url": null
+            },
+            {
+                "id": "bga-customer-maintenance-branch-maintenance",
+                "title": "MENU.BRACH_MAINTENANCE",
+                "reference": "bga-customer-maintenance-branch-maintenance-ref",
+                "url": null
+            },
+            {
+                "id": "bga-customer-maintenance-accounts-maintenance",
+                "title": "MENU.ACCOUNTS_MAINTENANCE",
+                "reference": "bga-customer-maintenance-accounts-maintenance-ref",
+                "url": null
+            },
+            {
+                "id": "bga-customer-maintenance-beneficiary-maintenance",
+                "title": "MENU.BENEFICIARY_MAINTENANCE",
+                "reference": "bga-customer-maintenance-beneficiary-maintenance-ref",
+                "url": null
+            },
+            {
+                "id": "bga-customer-maintenance-user-maintenance-profile",
+                "title": "MENU.USER_PROFILE",
+                "reference": "bga-customer-maintenance-user-maintenance-profile-ref",
+                "url": null
+            },
+            {
+                "id": "bga-customer-maintenance-user-maintenance-advanced-profile",
+                "title": "MENU.ADVANCED_USER_PROFILE",
+                "reference": "bga-customer-maintenance-user-maintenance-advanced-profile-ref",
+                "url": null
+            }
+        ],
+            "bga-customer-maintenance-profile-ref": [
+                {
+                    "id": "bga-customer-maintenance-profile-create",
+                    "title": "MENU.CREATE",
+                    "reference": null,
+                    "url": "/org/bga/customer/create"
+                },
+                {
+                    "id": "bga-customer-maintenance-profile-inpreparation",
+                    "title": "MENU.INPREPARATION",
+                    "reference": null,
+                    "url": "/org/bga/customer/inprep/list"
+                },
+                {
+                    "id": "bga-customer-maintenance-profile-pending",
+                    "title": "MENU.PENDING",
+                    "reference": null,
+                    "url": "/org/bga/customer/pending/list"
+                },
+                {
+                    "id": "bga-customer-maintenance-profile-existing",
+                    "title": "MENU.EXISTING",
+                    "reference": null,
+                    "url": "/org/bga/customer/master/list"
+                }
+            ],
+            "bga-customer-maintenance-advanced-profile-ref": [
+                {
+                    "id": "bga-customer-maintenance-advanced-profile-inpreparation",
+                    "title": "MENU.INPREPARATION",
+                    "reference": null,
+                    "url": "/org/bga/customer/advanced/inprep/list"
+                },
+                {
+                    "id": "bga-customer-maintenance-advanced-profile-pending",
+                    "title": "MENU.PENDING",
+                    "reference": null,
+                    "url": "/org/bga/customer/advanced/pending/list"
+                },
+                {
+                    "id": "bga-customer-maintenance-advanced-profile-existing",
+                    "title": "MENU.EXISTING",
+                    "reference": null,
+                    "url": "/org/bga/customer/advanced/master/list"
+                }
+            ],
+            "bga-customer-maintenance-auth-matrix-maintenance-ref": [
+                {
+                    "id": "bga-customer-maintenance-auth-matrix-create",
+                    "title": "MENU.CREATE",
+                    "reference": null,
+                    "url": "/org/bga/customer/authorization/create"
+                },
+                {
+                    "id": "bga-customer-maintenance-auth-matrix-inpreparation",
+                    "title": "MENU.INPREPARATION",
+                    "reference": null,
+                    "url": "/org/bga/customer/authorization/inprep/list"
+                },
+                {
+                    "id": "bga-customer-maintenance-auth-matrix-pending",
+                    "title": "MENU.PENDING",
+                    "reference": null,
+                    "url": "/org/bga/customer/authorization/pending/list"
+                },
+                {
+                    "id": "bga-customer-maintenance-auth-matrix-existing",
+                    "title": "MENU.EXISTING",
+                    "reference": null,
+                    "url": "/org/bga/customer/authorization/master/list"
+                }
+            ],
+            "bga-customer-maintenance-branch-maintenance-ref": [
+                {
+                    "id": "bga-customer-maintenance-branch-create",
+                    "title": "MENU.CREATE",
+                    "reference": null,
+                    "url": "/org/bga/customer/branch/create"
+                },
+                {
+                    "id": "bga-customer-maintenance-branch-inpreparation",
+                    "title": "MENU.INPREPARATION",
+                    "reference": null,
+                    "url": "/org/bga/customer/branch/inprep/list"
+                },
+                {
+                    "id": "bga-customer-maintenance-branch-pending",
+                    "title": "MENU.PENDING",
+                    "reference": null,
+                    "url": "/org/bga/customer/branch/pending/list"
+                },
+                {
+                    "id": "bga-customer-maintenance-branch-existing",
+                    "title": "MENU.EXISTING",
+                    "reference": null,
+                    "url": "/org/bga/customer/branch/master/list"
+                }
+            ],
+            "bga-customer-maintenance-accounts-maintenance-ref": [
+                {
+                    "id": "bga-customer-maintenance-accounts-create",
+                    "title": "MENU.CREATE",
+                    "reference": null,
+                    "url": "/org/bga/customer/accounts/create"
+                },
+                {
+                    "id": "bga-customer-maintenance-accounts-inpreparation",
+                    "title": "MENU.INPREPARATION",
+                    "reference": null,
+                    "url": "/org/bga/customer/accounts/inprep/list"
+                },
+                {
+                    "id": "bga-customer-maintenance-accounts-pending",
+                    "title": "MENU.PENDING",
+                    "reference": null,
+                    "url": "/org/bga/customer/accounts/pending/list"
+                },
+                {
+                    "id": "bga-customer-maintenance-accounts-existing",
+                    "title": "MENU.EXISTING",
+                    "reference": null,
+                    "url": "/org/bga/customer/accounts/master/list"
+                }
+            ],
+            "bga-customer-maintenance-beneficiary-maintenance-ref": [
+                {
+                    "id": "bga-customer-maintenance-beneficiary-create",
+                    "title": "MENU.CREATE",
+                    "reference": null,
+                    "url": "/org/bga/customer/beneficiary/create"
+                },
+                {
+                    "id": "bga-customer-maintenance-beneficiary-inpreparation",
+                    "title": "MENU.INPREPARATION",
+                    "reference": null,
+                    "url": "/org/bga/customer/beneficiary/inprep/list"
+                },
+                {
+                    "id": "bga-customer-maintenance-beneficiary-pending",
+                    "title": "MENU.PENDING",
+                    "reference": null,
+                    "url": "/org/bga/customer/beneficiary/pending/list"
+                },
+                {
+                    "id": "bga-customer-maintenance-beneficiary-existing",
+                    "title": "MENU.EXISTING",
+                    "reference": null,
+                    "url": "/org/bga/customer/beneficiary/master/list"
+                }
+            ],
+            "bga-customer-maintenance-user-maintenance-profile-ref": [
+                {
+                    "id": "bga-customer-maintenance-user-maintenance-profile-create",
+                    "title": "MENU.CREATE",
+                    "reference": null,
+                    "url": "/org/bga/customer/user/create"
+                },
+                {
+                    "id": "bga-customer-maintenance-user-maintenance-profile-inpreparation",
+                    "title": "MENU.INPREPARATION",
+                    "reference": null,
+                    "url": "/org/bga/customer/user/inprep/list"
+                },
+                {
+                    "id": "bga-customer-maintenance-user-maintenance-profile-pending",
+                    "title": "MENU.PENDING",
+                    "reference": null,
+                    "url": "/org/bga/customer/user/pending/list"
+                },
+                {
+                    "id": "bga-customer-maintenance-user-maintenance-profile-existing",
+                    "title": "MENU.EXISTING",
+                    "reference": null,
+                    "url": "/org/bga/customer/user/master/list"
+                }
+            ],
+            "bga-customer-maintenance-user-maintenance-advanced-profile-ref": [
+                {
+                    "id": "bga-customer-maintenance-user-maintenance-advanced-profile-inpreparation",
+                    "title": "MENU.INPREPARATION",
+                    "reference": null,
+                    "url": "/org/bga/customer/user/advanced/inprep/list"
+                },
+                {
+                    "id": "bga-customer-maintenance-user-maintenance-advanced-profile-pending",
+                    "title": "MENU.PENDING",
+                    "reference": null,
+                    "url": "/org/bga/customer/user/advanced/pending/list"
+                },
+                {
+                    "id": "bga-customer-maintenance-user-maintenance-advanced-profile-existing",
+                    "title": "MENU.EXISTING",
+                    "reference": null,
+                    "url": "/org/bga/customer/user/advanced/master/list"
+                }
+            ],
+
+    "bank-system-administration-ref": [
+        {
+            "id": "ba-bank-maintenance-role-maintenance",
+            "title": "MENU.ROLE_MAINTENANCE",
+            "reference": null,
+            "url": "/org/ba/bank/role"
+        },
+        {
+            "id": "ba-bank-maintenance-auth-matrix-maintenance",
+            "title": "MENU.AUTHORIZATION_MATRIX_MAINTENANCE",
+            "reference": null,
+            "url": "/org/ba/bank/authorization"
+        },
+        {
+            "id": "ba-bank-maintenance-user-maintenance",
+            "title": "MENU.USER_MAINTENANCE",
+            "reference": null,
+            "url": "/org/ba/bank/user"
+        },
+        {
+            "id": "ba-customer-maintenance",
+            "title": "MENU.CUSTOMER_MAINTENANCE",
+            "reference": null,
+            "url": "/org/ba/customer"
+        }
+    ],
+        "ba-bank-maintenance-role-maintenance-ref": [
+            {
+                "id": "ba-bank-maintenance-role-maintenance-inpreparation",
+                "title": "MENU.INPREPARATION",
+                "reference": null,
+                "url": "/org/ba/bank/role/inprep/list"
+            },
+            {
+                "id": "ba-bank-maintenance-role-maintenance-pending",
+                "title": "MENU.PENDING",
+                "reference": null,
+                "url": "/org/ba/bank/role/pending/list"
+            },
+            {
+                "id": "ba-bank-maintenance-role-maintenance-existing",
+                "title": "MENU.EXISTING",
+                "reference": null,
+                "url": "/org/ba/bank/role/master/list"
+            }
+        ],
+        "ba-bank-maintenance-auth-matrix-maintenance-ref": [
+            {
+                "id": "ba-bank-maintenance-auth-matrix-create",
+                "title": "MENU.CREATE",
+                "reference": null,
+                "url": "/org/ba/bank/authorization/create"
+            },
+            {
+                "id": "ba-bank-maintenance-auth-matrix-inpreparation",
+                "title": "MENU.INPREPARATION",
+                "reference": null,
+                "url": "/org/ba/bank/authorization/inprep/list"
+            },
+            {
+                "id": "ba-bank-maintenance-auth-matrix-pending",
+                "title": "MENU.PENDING",
+                "reference": null,
+                "url": "/org/ba/bank/authorization/pending/list"
+            },
+            {
+                "id": "ba-bank-maintenance-auth-matrix-existing",
+                "title": "MENU.EXISTING",
+                "reference": null,
+                "url": "/org/ba/bank/authorization/master/list"
+            }
+        ],
+        "ba-bank-maintenance-user-maintenance-ref": [
+            {
+                "id": "ba-bank-maintenance-user-maintenance-create",
+                "title": "MENU.CREATE",
+                "reference": null,
+                "url": "/org/ba/bank/user/create"
+            },
+            {
+                "id": "ba-bank-maintenance-user-maintenance-inpreparation",
+                "title": "MENU.INPREPARATION",
+                "reference": null,
+                "url": "/org/ba/bank/user/inprep/list"
+            },
+            {
+                "id": "ba-bank-maintenance-user-maintenance-pending",
+                "title": "MENU.PENDING",
+                "reference": null,
+                "url": "/org/ba/bank/user/pending/list"
+            },
+            {
+                "id": "ba-bank-maintenance-user-maintenance-existing",
+                "title": "MENU.EXISTING",
+                "reference": null,
+                "url": "/org/ba/bank/user/master/list"
+            }
+        ],
+        "ba-customer-maintenance-ref": [
+            {
+                "id": "ba-customer-maintenance-profile",
+                "title": "MENU.PROFILE",
+                "reference": "ba-customer-maintenance-profile-ref",
+                "url": null
+            },
+            {
+                "id": "ba-customer-maintenance-advanced-profile",
+                "title": "MENU.ADVANCED_PROFILE",
+                "reference": "ba-customer-maintenance-advanced-profile-ref",
+                "url": null
+            },
+            {
+                "id": "ba-customer-maintenance-auth-matrix-maintenance",
+                "title": "MENU.AUTHORIZATION_MATRIX_MAINTENANCE",
+                "reference": "ba-customer-maintenance-auth-matrix-maintenance-ref",
+                "url": null
+            },
+            {
+                "id": "ba-customer-maintenance-branch-maintenance",
+                "title": "MENU.BRACH_MAINTENANCE",
+                "reference": "ba-customer-maintenance-branch-maintenance-ref",
+                "url": null
+            },
+            {
+                "id": "ba-customer-maintenance-accounts-maintenance",
+                "title": "MENU.ACCOUNTS_MAINTENANCE",
+                "reference": "ba-customer-maintenance-accounts-maintenance-ref",
+                "url": null
+            },
+            {
+                "id": "ba-customer-maintenance-beneficiary-maintenance",
+                "title": "MENU.BENEFICIARY_MAINTENANCE",
+                "reference": "ba-customer-maintenance-beneficiary-maintenance-ref",
+                "url": null
+            },
+            {
+                "id": "ba-customer-maintenance-user-maintenance-profile",
+                "title": "MENU.USER_PROFILE",
+                "reference": "ba-customer-maintenance-user-maintenance-profile-ref",
+                "url": null
+            },
+            {
+                "id": "ba-customer-maintenance-user-maintenance-advanced-profile",
+                "title": "MENU.ADVANCED_USER_PROFILE",
+                "reference": "ba-customer-maintenance-user-maintenance-advanced-profile-ref",
+                "url": null
+            }
+        ],
+            "ba-customer-maintenance-profile-ref": [
+                {
+                    "id": "ba-customer-maintenance-profile-create",
+                    "title": "MENU.CREATE",
+                    "reference": null,
+                    "url": "/org/ba/customer/create"
+                },
+                {
+                    "id": "ba-customer-maintenance-profile-inpreparation",
+                    "title": "MENU.INPREPARATION",
+                    "reference": null,
+                    "url": "/org/ba/customer/inprep/list"
+                },
+                {
+                    "id": "ba-customer-maintenance-profile-pending",
+                    "title": "MENU.PENDING",
+                    "reference": null,
+                    "url": "/org/ba/customer/pending/list"
+                },
+                {
+                    "id": "ba-customer-maintenance-profile-existing",
+                    "title": "MENU.EXISTING",
+                    "reference": null,
+                    "url": "/org/ba/customer/master/list"
+                }
+            ],
+            "ba-customer-maintenance-advanced-profile-ref": [
+                {
+                    "id": "ba-customer-maintenance-advanced-profile-inpreparation",
+                    "title": "MENU.INPREPARATION",
+                    "reference": null,
+                    "url": "/org/ba/customer/advanced/inprep/list"
+                },
+                {
+                    "id": "ba-customer-maintenance-advanced-profile-pending",
+                    "title": "MENU.PENDING",
+                    "reference": null,
+                    "url": "/org/ba/customer/advanced/pending/list"
+                },
+                {
+                    "id": "ba-customer-maintenance-advanced-profile-existing",
+                    "title": "MENU.EXISTING",
+                    "reference": null,
+                    "url": "/org/ba/customer/advanced/master/list"
+                }
+            ],
+            "ba-customer-maintenance-auth-matrix-maintenance-ref": [
+                {
+                    "id": "ba-customer-maintenance-auth-matrix-create",
+                    "title": "MENU.CREATE",
+                    "reference": null,
+                    "url": "/org/ba/customer/authorization/create"
+                },
+                {
+                    "id": "ba-customer-maintenance-auth-matrix-inpreparation",
+                    "title": "MENU.INPREPARATION",
+                    "reference": null,
+                    "url": "/org/ba/customer/authorization/inprep/list"
+                },
+                {
+                    "id": "ba-customer-maintenance-auth-matrix-pending",
+                    "title": "MENU.PENDING",
+                    "reference": null,
+                    "url": "/org/ba/customer/authorization/pending/list"
+                },
+                {
+                    "id": "ba-customer-maintenance-auth-matrix-existing",
+                    "title": "MENU.EXISTING",
+                    "reference": null,
+                    "url": "/org/ba/customer/authorization/master/list"
+                }
+            ],
+            "ba-customer-maintenance-branch-maintenance-ref": [
+                {
+                    "id": "ba-customer-maintenance-branch-create",
+                    "title": "MENU.CREATE",
+                    "reference": null,
+                    "url": "/org/ba/customer/branch/create"
+                },
+                {
+                    "id": "ba-customer-maintenance-branch-inpreparation",
+                    "title": "MENU.INPREPARATION",
+                    "reference": null,
+                    "url": "/org/ba/customer/branch/inprep/list"
+                },
+                {
+                    "id": "ba-customer-maintenance-branch-pending",
+                    "title": "MENU.PENDING",
+                    "reference": null,
+                    "url": "/org/ba/customer/branch/pending/list"
+                },
+                {
+                    "id": "ba-customer-maintenance-branch-existing",
+                    "title": "MENU.EXISTING",
+                    "reference": null,
+                    "url": "/org/ba/customer/branch/master/list"
+                }
+            ],
+            "ba-customer-maintenance-accounts-maintenance-ref": [
+                {
+                    "id": "ba-customer-maintenance-accounts-create",
+                    "title": "MENU.CREATE",
+                    "reference": null,
+                    "url": "/org/ba/customer/accounts/create"
+                },
+                {
+                    "id": "ba-customer-maintenance-accounts-inpreparation",
+                    "title": "MENU.INPREPARATION",
+                    "reference": null,
+                    "url": "/org/ba/customer/accounts/inprep/list"
+                },
+                {
+                    "id": "ba-customer-maintenance-accounts-pending",
+                    "title": "MENU.PENDING",
+                    "reference": null,
+                    "url": "/org/ba/customer/accounts/pending/list"
+                },
+                {
+                    "id": "ba-customer-maintenance-accounts-existing",
+                    "title": "MENU.EXISTING",
+                    "reference": null,
+                    "url": "/org/ba/customer/accounts/master/list"
+                }
+            ],
+            "ba-customer-maintenance-beneficiary-maintenance-ref": [
+                {
+                    "id": "ba-customer-maintenance-beneficiary-create",
+                    "title": "MENU.CREATE",
+                    "reference": null,
+                    "url": "/org/ba/customer/beneficiary/create"
+                },
+                {
+                    "id": "ba-customer-maintenance-beneficiary-inpreparation",
+                    "title": "MENU.INPREPARATION",
+                    "reference": null,
+                    "url": "/org/ba/customer/beneficiary/inprep/list"
+                },
+                {
+                    "id": "ba-customer-maintenance-beneficiary-pending",
+                    "title": "MENU.PENDING",
+                    "reference": null,
+                    "url": "/org/ba/customer/beneficiary/pending/list"
+                },
+                {
+                    "id": "ba-customer-maintenance-beneficiary-existing",
+                    "title": "MENU.EXISTING",
+                    "reference": null,
+                    "url": "/org/ba/customer/beneficiary/master/list"
+                }
+            ],
+            "ba-customer-maintenance-user-maintenance-profile-ref": [
+                {
+                    "id": "ba-customer-maintenance-user-maintenance-profile-create",
+                    "title": "MENU.CREATE",
+                    "reference": null,
+                    "url": "/org/ba/customer/user/create"
+                },
+                {
+                    "id": "ba-customer-maintenance-user-maintenance-profile-inpreparation",
+                    "title": "MENU.INPREPARATION",
+                    "reference": null,
+                    "url": "/org/ba/customer/user/inprep/list"
+                },
+                {
+                    "id": "ba-customer-maintenance-user-maintenance-profile-pending",
+                    "title": "MENU.PENDING",
+                    "reference": null,
+                    "url": "/org/ba/customer/user/pending/list"
+                },
+                {
+                    "id": "ba-customer-maintenance-user-maintenance-profile-existing",
+                    "title": "MENU.EXISTING",
+                    "reference": null,
+                    "url": "/org/ba/customer/user/master/list"
+                }
+            ],
+            "ba-customer-maintenance-user-maintenance-advanced-profile-ref": [
+                {
+                    "id": "ba-customer-maintenance-user-maintenance-advanced-profile-inpreparation",
+                    "title": "MENU.INPREPARATION",
+                    "reference": null,
+                    "url": "/org/ba/customer/user/advanced/inprep/list"
+                },
+                {
+                    "id": "ba-customer-maintenance-user-maintenance-advanced-profile-pending",
+                    "title": "MENU.PENDING",
+                    "reference": null,
+                    "url": "/org/ba/customer/user/advanced/pending/list"
+                },
+                {
+                    "id": "ba-customer-maintenance-user-maintenance-advanced-profile-existing",
+                    "title": "MENU.EXISTING",
+                    "reference": null,
+                    "url": "/org/ba/customer/user/advanced/master/list"
+                }
+            ],
+    "customer-system-administration-ref": [
+        {
+            "id": "ca-customer-maintenance-role-maintenance",
+            "title": "MENU.ROLE_MAINTENANCE",
+            "reference": null,
+            "url": "/org/ca/customer/role"
+        },
+        {
+            "id": "ca-customer-maintenance-auth-matrix-maintenance",
+            "title": "MENU.AUTHORIZATION_MATRIX_MAINTENANCE",
+            "reference": null,
+            "url": "/org/ca/customer/authorization"
+        },
+        {
+            "id": "ca-customer-maintenance-user-maintenance",
+            "title": "MENU.USER_MAINTENANCE",
+            "reference": null,
+            "url": "/org/ca/customer/user"
+        },
+        {
+            "id": "ca-customer-maintenance-branch-maintenance",
+            "title": "MENU.BRACH_MAINTENANCE",
+            "reference": null,
+            "url": "/org/ca/customer/branch"
+        },
+        {
+            "id": "ca-customer-maintenance-accounts-maintenance",
+            "title": "MENU.ACCOUNTS_MAINTENANCE",
+            "reference": null,
+            "url": "/org/ca/customer/accounts"
+        },
+        {
+            "id": "ca-customer-maintenance-beneficiary-maintenance",
+            "title": "MENU.BENEFICIARY_MAINTENANCE",
+            "reference": null,
+            "url": "/org/ca/customer/beneficiary"
+        }
+    ],
+        "ca-customer-maintenance-role-maintenance-ref": [
+            {
+                "id": "ca-customer-maintenance-role-maintenance-inpreparation",
+                "title": "MENU.INPREPARATION",
+                "reference": null,
+                "url": "/org/ca/customer/role/inprep/list"
+            },
+            {
+                "id": "ca-customer-maintenance-role-maintenance-pending",
+                "title": "MENU.PENDING",
+                "reference": null,
+                "url": "/org/ca/customer/role/pending/list"
+            },
+            {
+                "id": "ca-customer-maintenance-role-maintenance-existing",
+                "title": "MENU.EXISTING",
+                "reference": null,
+                "url": "/org/ca/customer/role/master/list"
+            }
+        ],
+        "ca-customer-maintenance-auth-matrix-maintenance-ref": [
+            {
+                "id": "ca-customer-maintenance-auth-matrix-create",
+                "title": "MENU.CREATE",
+                "reference": null,
+                "url": "/org/ca/customer/authorization/create"
+            },
+            {
+                "id": "ca-customer-maintenance-auth-matrix-inpreparation",
+                "title": "MENU.INPREPARATION",
+                "reference": null,
+                "url": "/org/ca/customer/authorization/inprep/list"
+            },
+            {
+                "id": "ca-customer-maintenance-auth-matrix-pending",
+                "title": "MENU.PENDING",
+                "reference": null,
+                "url": "/org/ca/customer/authorization/pending/list"
+            },
+            {
+                "id": "ca-customer-maintenance-auth-matrix-existing",
+                "title": "MENU.EXISTING",
+                "reference": null,
+                "url": "/org/ca/customer/authorization/master/list"
+            }
+        ],
+        "ca-customer-maintenance-user-maintenance-ref": [
+            {
+                "id": "ca-customer-maintenance-user-maintenance-profile",
+                "title": "MENU.PROFILE",
+                "reference": "ca-customer-maintenance-user-maintenance-profile-ref",
+                "url": null
+            },
+            {
+                "id": "ca-customer-maintenance-user-maintenance-advanced-profile",
+                "title": "MENU.ADVANCED_PROFILE",
+                "reference": "ca-customer-maintenance-user-maintenance-advanced-profile-ref",
+                "url": null
+            }
+        ],
+            "ca-customer-maintenance-user-maintenance-profile-ref": [
+                {
+                    "id": "ca-customer-maintenance-user-maintenance-profile-create",
+                    "title": "MENU.CREATE",
+                    "reference": null,
+                    "url": "/org/ca/customer/user/create"
+                },
+                {
+                    "id": "ca-customer-maintenance-user-maintenance-profile-inpreparation",
+                    "title": "MENU.INPREPARATION",
+                    "reference": null,
+                    "url": "/org/ca/customer/user/inprep/list"
+                },
+                {
+                    "id": "ca-customer-maintenance-user-maintenance-profile-pending",
+                    "title": "MENU.PENDING",
+                    "reference": null,
+                    "url": "/org/ca/customer/user/pending/list"
+                },
+                {
+                    "id": "ca-customer-maintenance-user-maintenance-profile-existing",
+                    "title": "MENU.EXISTING",
+                    "reference": null,
+                    "url": "/org/ca/customer/user/master/list"
+                }
+            ],
+            "ca-customer-maintenance-user-maintenance-advanced-profile-ref": [
+                {
+                    "id": "ca-customer-maintenance-user-maintenance-advanced-profile-inpreparation",
+                    "title": "MENU.INPREPARATION",
+                    "reference": null,
+                    "url": "/org/ca/customer/user/advanced/inprep/list"
+                },
+                {
+                    "id": "ca-customer-maintenance-user-maintenance-advanced-profile-pending",
+                    "title": "MENU.PENDING",
+                    "reference": null,
+                    "url": "/org/ca/customer/user/advanced/pending/list"
+                },
+                {
+                    "id": "ca-customer-maintenance-user-maintenance-advanced-profile-existing",
+                    "title": "MENU.EXISTING",
+                    "reference": null,
+                    "url": "/org/ca/customer/user/advanced/master/list"
+                }
+            ],
+        "ca-customer-maintenance-branch-maintenance-ref": [
+            {
+                "id": "ca-customer-maintenance-branch-maintenance-create",
+                "title": "MENU.CREATE",
+                "reference": null,
+                "url": "/org/ca/customer/branch/create"
+            },
+            {
+                "id": "ca-customer-maintenance-branch-maintenance-inpreparation",
+                "title": "MENU.INPREPARATION",
+                "reference": null,
+                "url": "/org/ca/customer/branch/inprep/list"
+            },
+            {
+                "id": "ca-customer-maintenance-branch-maintenance-pending",
+                "title": "MENU.PENDING",
+                "reference": null,
+                "url": "/org/ca/customer/branch/pending/list"
+            },
+            {
+                "id": "ca-customer-maintenance-branch-maintenance-existing",
+                "title": "MENU.EXISTING",
+                "reference": null,
+                "url": "/org/ca/customer/branch/master/list"
+            }
+        ],
+        "ca-customer-maintenance-accounts-maintenance-ref": [
+            {
+                "id": "ca-customer-maintenance-accounts-maintenance-create",
+                "title": "MENU.CREATE",
+                "reference": null,
+                "url": "/org/ca/customer/accounts/create"
+            },
+            {
+                "id": "ca-customer-maintenance-accounts-maintenance-inpreparation",
+                "title": "MENU.INPREPARATION",
+                "reference": null,
+                "url": "/org/ca/customer/accounts/inprep/list"
+            },
+            {
+                "id": "ca-customer-maintenance-accounts-maintenance-pending",
+                "title": "MENU.PENDING",
+                "reference": null,
+                "url": "/org/ca/customer/accounts/pending/list"
+            },
+            {
+                "id": "ca-customer-maintenance-accounts-maintenance-existing",
+                "title": "MENU.EXISTING",
+                "reference": null,
+                "url": "/org/ca/customer/accounts/master/list"
+            }
+        ],
+        "ca-customer-maintenance-beneficiary-maintenance-ref": [
+            {
+                "id": "ca-customer-maintenance-beneficiary-maintenance-create",
+                "title": "MENU.CREATE",
+                "reference": null,
+                "url": "/org/ca/customer/beneficiary/create"
+            },
+            {
+                "id": "ca-customer-maintenance-beneficiary-maintenance-inpreparation",
+                "title": "MENU.INPREPARATION",
+                "reference": null,
+                "url": "/org/ca/customer/beneficiary/inprep/list"
+            },
+            {
+                "id": "ca-customer-maintenance-beneficiary-maintenance-pending",
+                "title": "MENU.PENDING",
+                "reference": null,
+                "url": "/org/ca/customer/beneficiary/pending/list"
+            },
+            {
+                "id": "ca-customer-maintenance-beneficiary-maintenance-existing",
+                "title": "MENU.EXISTING",
+                "reference": null,
+                "url": "/org/ca/customer/beneficiary/master/list"
+            }
+        ]
+}
