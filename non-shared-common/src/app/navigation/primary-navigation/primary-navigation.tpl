@@ -3,7 +3,7 @@
     <!-- Vertical Primary Menu -->
     <md-sidenav ng-show="vm.primaryLayoutType === 'vertical'" class="md-whiteframe-6dp primary-vertical-navigation"
             md-component-id="primary-vertical-navigation" ng-mouseleave="vm.verticalNavigationOnLeave()" md-is-locked-open="vm.verticalNavigationLocked">
-        <md-toolbar class="md-accent" layout="row" layout-align="space-between center">
+        <md-toolbar class="md-accent md-hue-3" layout="row" layout-align="space-between center">
             <div layout="row" layout-align="start center" layout-margin>
                 <md-icon md-svg-icon="earth" class="icon" aria-label="Logo"></md-icon>
                 DEMOBANK
