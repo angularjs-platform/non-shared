@@ -5,7 +5,8 @@
     </md-content>
 
     <!-- Page Content -->
-    <div ui-view="content" layout="column" flex></div>
+    <div ui-view="content" class="anim-in-out anim-slide-right" data-anim-sync="true"
+        data-anim-out-speed="0" data-anim-in-speed="1000" layout="column" flex></div>
 
     <!-- Right Menu -->
     <md-content hide show-gt-sm ng-show="vm.LayoutService.getSecondaryLayoutType() === 'right' && vm.MenuService.getSecondaryMenuList()"
