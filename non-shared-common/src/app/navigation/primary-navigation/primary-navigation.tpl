@@ -110,7 +110,8 @@
         </div>
 
         <!-- Secondary Page Content-->
-        <div ui-view="secondary-main" class="non-secondary-main" layout="column" flex></div>
+        <div ui-view="secondary-main" class="non-secondary-main anim-in-out anim-slide-right" data-anim-sync="true"
+        data-anim-out-speed="0" data-anim-in-speed="1000" layout="column" flex></div>
 
         <!-- Fab Speed Dial
         <md-fab-speed-dial md-direction="up" class="md-fling md-fab-bottom-right">
