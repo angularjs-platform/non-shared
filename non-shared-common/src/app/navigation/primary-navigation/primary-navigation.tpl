@@ -152,8 +152,8 @@
             </md-tab>
             <md-tab hide-xs hide-sm>
                 <md-tab-label><span translate>QUICK_PANEL.TAB_HEADER_SETTINGS</span></md-tab-label>
-                <md-tab-body>
-                    <md-content class="settings-tab">
+                <md-tab-body layout="column">
+                    <div class="settings-tab" flex>
                         <div hide show-gt-sm>
                             <div layout="column" class="md-caption">
                                 <div>
@@ -191,7 +191,7 @@
                                 </div>
                             </div>
                         </div>
-                    </md-content>
+                    </div>
                 </md-tab-body>
             </md-tab>
         </md-tabs>
