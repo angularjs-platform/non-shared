@@ -63,6 +63,7 @@ $secondary-navigation-toolbar-bg-color: #fff;
         md-content {
             height: 90vh;
             background: $primary-hue-3;
+            border-top: 5px solid $primary-default;
         }
     }
 
