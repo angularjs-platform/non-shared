@@ -114,15 +114,15 @@ export abstract class WorkflowManagementService implements IWorkflowManagementSe
     private createPayloadForCheck = (form: any, formModel: {}): {} => {
         const payload: {} = {};
         payload['ids'] = [];
-        payload['ids'].push(formModel['id']);
-        payload['comments'] = formModel['comments'];
+        payload['ids'].push(formModel['rootVO']['id']);
+        payload['comments'] = formModel['rootVO']['comments'];
         return payload;
     };
 
     private createPayloadForDiscard = (form: any, formModel: {}): {} => {
         const payload: {} = {};
         payload['ids'] = [];
-        payload['ids'].push(formModel['id']);
+        payload['ids'].push(formModel['rootVO']['id']);
         return payload;
     };
 

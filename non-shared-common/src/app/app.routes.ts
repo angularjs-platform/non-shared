@@ -1,5 +1,7 @@
 import { IMenuService, IStateProvider, IConfigurationService, Configuration } from '@norn/non-framework';
 
+const menu: any = require('./menu.json');
+
 export class UiRouterConfig {
 
     constructor (
@@ -35,7 +37,7 @@ export class UiRouterConfig {
         'ngInject';
 
         return ConfigurationService.loadConfig().then((config: Configuration): void => {
-            MenuService.setPrimaryMenuList(config.primaryMenuList);
+            MenuService.setPrimaryMenuList(menu);
         });
     };
 
