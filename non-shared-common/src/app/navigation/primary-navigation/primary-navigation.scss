@@ -80,6 +80,8 @@ $secondary-navigation-toolbar-bg-color: #fff;
     .non-primary-quick-panel  {
 
         md-tabs {
+            border-radius: 0;
+
             md-ink-bar {
                 background: $primary-default;
                 color: $primary-default;
